@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  leehao:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: leehao
+    tty: true
+    command: ["tail", "-f", "/dev/null"]
+    volumes:
+      - .:/app/
+
+  mariadb:
+    container_name: mariadb
+    image: mariadb:11.4.2
+    environment:
+      MYSQL_ROOT_PASSWORD: leehao1421
+      MYSQL_DATABASE: leehao
+      MYSQL_USER: leehao
+      MYSQL_PASSWORD: leehao
+    volumes:
+      - ./data/:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    restart: always
