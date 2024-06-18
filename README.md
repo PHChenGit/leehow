@@ -2,6 +2,17 @@
 取中文諧音 你好，就像在對 leetcode 說你好
 how 這個字有點怎麼做的意思在，就像我們在解題的時候 常常在寫怎麼寫
 
+# Set env variables
+```
+DISCORD_TOKEN=<replace-your-bot-token-here>
+
+DATABASE_USERNAME=leehao
+DATABASE_PASSWORD=leehao
+DATABASE_HOST=mariadb
+DATABASE_PORT=3306
+DATABASE=leehao
+```
+
 # Launch services
 ```
 docker compose up -d
