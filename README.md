@@ -1,3 +1,7 @@
+這個 project 取名 leehow 有兩個意思
+取中文諧音 你好，就像在對 leetcode 說你好
+how 這個字有點怎麼做的意思在，就像我們在解題的時候 常常在寫怎麼寫
+
 # Launch services
 ```
 docker compose up -d
@@ -29,5 +33,9 @@ CREATE TABLE users (
 ```
 SHOW TABLES;
 ```
-
+## Go to leehow app docker container and launch app
+```
+docker compose exec -it leehao sh
+python main.py
+```
 
