@@ -39,3 +39,11 @@ docker compose exec -it leehao sh
 python main.py
 ```
 
+# How to add members
+1. Go to your leetcode profile, then copy your leetcode username
+![leetcode profile name demo](./leetcode_demo.png)
+
+2. Back to discord and use command /add [leetcode_username]
+
+# How to show leaderboard
+1. Go to discord and user command /board
